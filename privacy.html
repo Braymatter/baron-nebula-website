@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy · Baron Nebula</title>
+<meta name="description" content="What Baron Nebula and its servers store about you, who can see it, and how to have it deleted.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Baron Nebula">
+<meta property="og:title" content="Privacy · Baron Nebula">
+<meta property="og:description" content="What Baron Nebula and its servers store about you, who can see it, and how to have it deleted.">
+<meta property="og:image" content="https://braymatter.github.io/baron-nebula-website/media/marketing_midgame.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="stylesheet" href="palette.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="page-privacy">
+<nav class="top"><div class="wrap">
+    <a class="mark" href="index.html">BARON NEBULA</a>
+    <div class="links">
+        <a href="index.html#features">Features</a>
+        <a href="press.html#screenshots">Screenshots</a>
+        <a href="patch-notes.html">Patch notes</a>
+        <a href="press.html">Press kit</a>
+    </div>
+    <a class="btn small primary" href="https://braymatter.itch.io/baron-nebula">Play free</a>
+</div></nav>
+
+<header class="page-head"><div class="wrap">
+    <h2>Privacy</h2>
+    <h1>What we keep, and why</h1>
+    <p class="lede">The short version: no ads, no analytics, no tracking. The game talks to our server only to play online and to send crash reports, and you can turn crash reports off.</p>
+</div></header>
+
+<section class="tight"><div class="wrap narrow prose">
+    <h3>Playing offline</h3>
+    <p>Skirmishes against bots and the tutorial send nothing anywhere, apart from crash reports (below).</p>
+
+    <h3>Playing online</h3>
+    <p>When you play online, our game server stores:</p>
+    <ul>
+        <li>an anonymous identity, whose key is saved in a file on your computer;</li>
+        <li>the name you play under: the one you choose, or, in the Steam version, your Steam name and Steam ID;</li>
+        <li>whether you're online, and the lobbies and matches you're in;</li>
+        <li>a record of every online match (who played, the orders given and the result) and its chat (every message sent in the match and in its lobby before it started), kept for 30 days and then deleted;</li>
+        <li>your results: wins, losses and draws, your last 50 matches, lifetime totals and your rating;</li>
+        <li>reports you send about other players, and reports about you, with the reason, the note and what the reported player said in chat where you played together, kept for 90 days;</li>
+        <li>if you are banned from online play, the ban's reason and when it ends.</li>
+    </ul>
+    <p>If you have never played an online match and haven't been online for 30 days, the server deletes your identity and name.
+    Anyone who has played one, and everyone who signs in with Steam, is kept, as is anyone who is banned from online play.
+    A new identity that has never played is also kept, rather than forgotten when it closes the game, while it is banned or has been reported.</p>
+    <p>Other players can see your name, whether you're online, and your profile (results, match history and rating).</p>
+    <p>Match records and their chat can be read only by the developer, who uses them to review matches and fix bugs (a match can be replayed from its orders).
+    The server deletes them 30 days after the match ends.</p>
+
+    <h3>Steam</h3>
+    <p>The Steam version proves who you are to our server with a ticket from Steam, which our server checks with Steam.
+    We receive your Steam ID and Steam name; nothing else from your Steam account.</p>
+
+    <h3>Crash reports and bug reports</h3>
+    <p>If the game crashes, it sends a report the next time you start it.
+    A report holds the error, the game's build, your operating system, processor type, graphics card and screen size, the match it happened in (map and time), and the last 200 lines of the game's log, which can include your player name, lobby and server.
+    File paths are cut down so your computer's user name isn't included.</p>
+    <p>Crash reports are on by default.
+    Turn them off in <b>Settings › Interface › Crash reports</b>; that also deletes any reports still waiting to be sent.
+    <b>Report a bug</b> (F8, or the pause menu) sends the same details with your note, and only when you ask.</p>
+
+    <h3>Where it's kept</h3>
+    <p>The game server runs on SpacetimeDB Maincloud, hosted by Clockwork Labs, which sees the IP address you connect from.
+    This website is hosted on GitHub Pages, which keeps its own logs of visitors' IP addresses under GitHub's privacy statement.
+    The site sets no cookies and runs no analytics.</p>
+
+    <h3>Deleting your data</h3>
+    <p>Write to <a href="mailto:baron.nebula@gmail.com">baron.nebula@gmail.com</a> with your player name (or Steam ID), and roughly when you last played online, and we'll delete your identity and account, your results and rating, the chat you sent that is still kept, and reports about you.
+    Past matches you played keep your seat as "Deleted player" so the other players' results still add up, and a kept match record loses its replay.
+    A ban stays, since it holds only a number and the reason, not your name.</p>
+
+    <p class="updated">Last updated 4 November 2026.</p>
+</div></section>
+
+
+<footer><div class="wrap">
+    <div>© 2026 Braymatter</div>
+    <div class="right">
+        <a href="press.html">Press kit</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="support.html">Support</a>
+        <a href="https://discord.gg/vuvZMD9mRx">Discord</a>
+        <a href="https://braymatter.itch.io/baron-nebula">itch.io</a>
+    </div>
+</div></footer>
+</body>
+</html>
