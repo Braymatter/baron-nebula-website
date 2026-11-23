@@ -54,7 +54,7 @@ nav.top .links a:hover { color: var(--text); }
 .kicker { color: var(--highlight); }
 h2 { color: var(--header); }
 h1 { font-size: 64px; line-height: 1.02; margin: 14px 0 18px; font-weight: 700; letter-spacing: .5px; }
-h1 span, .page-head h1 { background: linear-gradient(#ffffff, #8fb0ff); -webkit-background-clip: text; background-clip: text; color: transparent; }
+h1 span, .page-head h1 { padding-bottom: .14em; background: linear-gradient(#ffffff, #8fb0ff); -webkit-background-clip: text; background-clip: text; color: transparent; }
 .lede { font-size: 19px; line-height: 1.55; color: var(--lede); margin: 0 0 30px; }
 .ctas { display: flex; gap: 14px; flex-wrap: wrap; }
 .meta { margin-top: 22px; font-size: 14px; color: var(--text-dim); }
@@ -63,7 +63,7 @@ h1 span, .page-head h1 { background: linear-gradient(#ffffff, #8fb0ff); -webkit-
 
 /* Inner page heading */
 .page-head { padding: 150px 0 30px; background: radial-gradient(70% 140% at 20% 0%, rgba(40, 80, 190, .28), transparent 70%); }
-.page-head h1 { font-size: 52px; margin: 6px 0 14px; }
+.page-head h1 { font-size: 52px; margin: 6px 0 6px; }
 .page-head .lede { max-width: 720px; }
 .page-head.lost { padding-bottom: 120px; }
 
