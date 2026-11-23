@@ -71,17 +71,20 @@ section { padding: 80px 0; }
 section.tight { padding: 0 0 80px; }
 .h { font-size: 36px; font-weight: 700; margin: 0 0 36px; }
 
-/* Panels and cards */
-.panel, .card { background: var(--panel); border: 1px solid var(--panel-edge); border-radius: var(--radius); }
-.panel { padding: 24px 28px; }
-.features { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; }
-.card { overflow: hidden; }
-.card img { display: block; width: 100%; height: 230px; object-fit: cover; }
-.card .t { padding: 18px 22px 22px; }
-.card h3 { margin: 0 0 6px; font-size: 21px; }
-.card p { margin: 0; color: var(--text-dim); line-height: 1.5; font-size: 15.5px; }
-.tag { display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: 1px; color: var(--rival);
-       border: 1px solid currentColor; border-radius: 3px; padding: 2px 6px; margin-left: 8px; vertical-align: 3px; }
+/* Panels */
+.panel { background: var(--panel); border: 1px solid var(--panel-edge); border-radius: var(--radius); padding: 24px 28px; }
+
+/* The landing page's beats: a clip and its line side by side, sides alternating */
+.beats { display: grid; gap: 64px; }
+.beat { display: grid; grid-template-columns: 3fr 2fr; gap: 44px; align-items: center; }
+.beat > * { min-width: 0; }
+.beat:nth-child(even) .frame { order: 2; }
+.beat .frame { aspect-ratio: 16 / 9; border-radius: var(--radius); overflow: hidden;
+               border: 1px solid var(--panel-edge); background: var(--panel); }
+.clip { display: block; width: 100%; height: 100%; object-fit: cover; }
+.beat .n { color: var(--highlight); font-size: 13px; font-weight: 600; letter-spacing: 2.5px; margin-bottom: 8px; }
+.beat h3 { margin: 0 0 12px; font-size: 32px; line-height: 1.1; }
+.beat p { margin: 0; color: var(--lede); line-height: 1.55; font-size: 17px; }
 
 .trailer { position: relative; border-radius: 12px; overflow: hidden; border: 1px solid var(--panel-edge-top); height: 480px; }
 .trailer img { width: 100%; height: 100%; object-fit: cover; filter: brightness(.45) saturate(1.1); }
@@ -141,7 +144,11 @@ footer a:hover { color: var(--text); }
     .page-head h1 { font-size: 38px; }
     .hero { height: auto; min-height: 640px; padding-bottom: 60px; }
     .hero .copy { padding-top: 130px; }
-    .features, .split, .press { grid-template-columns: 1fr; }
+    .beat, .split, .press { grid-template-columns: 1fr; }
+    .beats { gap: 44px; }
+    .beat { gap: 18px; }
+    .beat:nth-child(even) .frame { order: 0; }
+    .beat h3 { font-size: 26px; }
     .trailer { height: 260px; }
     .gallery { grid-template-columns: 1fr; }
 }

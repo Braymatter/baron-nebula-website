@@ -40,6 +40,7 @@
     --meter-fill: rgb(77, 140, 209);
     --text: rgb(219, 230, 250);
     --text-dim: rgb(140, 153, 179);
+    --text-off: rgba(140, 153, 179, 0.38);
     --highlight: rgb(255, 209, 77);
     --contested: rgb(255, 237, 209);
     --inset: rgba(0, 0, 8, 0.55);
@@ -57,6 +58,7 @@
     --search-orbit: rgba(140, 173, 255, 0.16);
     --alien-glyph: rgb(115, 242, 204);
     --release-heading: rgb(128, 199, 255);
+    --ping-request: rgb(89, 209, 255);
     --core-fogged: rgb(77, 77, 89);
     --glyph-building: rgb(89, 97, 115);
     --glyph-fogged: rgb(64, 64, 77);
