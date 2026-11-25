@@ -43,6 +43,7 @@
     --text-off: rgba(140, 153, 179, 0.38);
     --highlight: rgb(255, 209, 77);
     --contested: rgb(255, 237, 209);
+    --player-title: rgb(219, 199, 148);
     --inset: rgba(0, 0, 8, 0.55);
     --preview-lane: rgba(115, 140, 199, 0.6);
     --preview-wormhole: rgba(89, 217, 242, 0.85);
@@ -52,6 +53,9 @@
     --preview-berth-lane: rgba(235, 219, 179, 0.3);
     --preview-farcaster: rgba(255, 107, 217, 0.9);
     --emp: rgb(140, 255, 242);
+    --queue-ranked: rgb(255, 153, 64);
+    --queue-unranked: rgb(107, 219, 128);
+    --queue-custom: rgb(184, 133, 255);
     --search-plate: rgb(158, 224, 255);
     --search-glow: rgba(77, 179, 255, 0.6);
     --search-core: rgb(217, 245, 255);
